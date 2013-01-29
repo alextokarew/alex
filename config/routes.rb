@@ -1,5 +1,11 @@
 Alex::Application.routes.draw do
 
+  resources :posts
+
+
+  resources :projects
+
+
   get 'about' => 'welcome#about', :as => :about
   get 'contacts' => 'welcome#contacts', :as => :contacts
 

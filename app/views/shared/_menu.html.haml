@@ -1,6 +1,6 @@
 %ul.nav
   %li{:class => cp(root_path)}= link_to 'Блог', root_path
   %li{:class => cp(about_path)}= link_to 'Обо мне', about_path
-  %li= 'Проекты'
+  %li{:class => cp(projects_path)}= link_to 'Проекты', projects_path
   %li= 'Разное'
   %li{:class => cp(contacts_path)}= link_to 'Контакты', contacts_path
