@@ -10,4 +10,8 @@ class WelcomeController < ApplicationController
 
   def contacts
   end
+
+  def other
+    render :nothing => true
+  end
 end

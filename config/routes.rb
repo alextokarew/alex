@@ -1,13 +1,11 @@
 Alex::Application.routes.draw do
 
   resources :posts
-
-
   resources :projects
-
 
   get 'about' => 'welcome#about', :as => :about
   get 'contacts' => 'welcome#contacts', :as => :contacts
+  get 'other' => 'welcome#other', :as => :other
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
