@@ -1,5 +1,6 @@
 %ul.nav
-  %li= link_to t('menu.about'), about_path
-  %li= t 'menu.portfolio'
-  %li= t 'menu.hobbies'
-  %li= link_to t('menu.contacts'), contacts_path
+  %li{:class => cp(root_path)}= link_to 'Блог', root_path
+  %li{:class => cp(about_path)}= link_to 'Обо мне', about_path
+  %li= 'Проекты'
+  %li= 'Разное'
+  %li{:class => cp(contacts_path)}= link_to 'Контакты', contacts_path

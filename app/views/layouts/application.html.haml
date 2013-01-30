@@ -6,7 +6,7 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .container
-      .row
-        .span3= render 'shared/menu'
-        .span9= yield
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container= render 'shared/menu'
+    .container= yield
