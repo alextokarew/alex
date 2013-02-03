@@ -1,7 +1,7 @@
 Alex::Application.routes.draw do
-
   resources :posts
   resources :projects
+  resources :images, :only=>[:index,:show,:new,:create,:destroy], :format=>false, :constraints => { :id => /[0-9A-Za-z\-\.]+/ }
 
   get 'about' => 'welcome#about', :as => :about
   get 'contacts' => 'welcome#contacts', :as => :contacts
