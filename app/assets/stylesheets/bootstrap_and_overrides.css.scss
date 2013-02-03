@@ -1,3 +1,23 @@
 @import "bootstrap";
+
 body { padding-top: 60px; }
+article {
+  font-size: 12pt;
+  font-family: $serifFontFamily;
+  p {
+    line-height: 1.5em;
+  }
+  h1 {
+    font-size: 2.1em;
+    line-height: 1.5em;
+  }
+  time {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666666;
+    display: block;
+    margin: -1.0em 0 1.0em 0;
+  }
+}
+
 @import "bootstrap-responsive";

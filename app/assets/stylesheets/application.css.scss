@@ -11,23 +11,3 @@
  *= require_tree .
  *= require_self
  */
-
-article {
-  font-size: 12pt;
-  font-family: Georgia, Times New Roman, Times, serif;
-  p {
-    font: inherit;
-    line-height: 1.5em;
-  }
-  h1 {
-    font-size: 2.1em;
-    line-height: 2.1em;
-  }
-  time {
-    font-size: 0.9em;
-    font-style: italic;
-    color: #666666;
-    display: block;
-    margin: -1.5em 0 1.5em 0;
-  }
-}
