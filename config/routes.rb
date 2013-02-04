@@ -1,7 +1,7 @@
 Alex::Application.routes.draw do
   resources :posts
   resources :projects
-  resources :images, :only=>[:index,:show,:new,:create,:destroy], :format=>false, :constraints => { :id => /[0-9A-Za-z\-\.]+/ }
+  resources :images, :except=>[:edit,:update], :format=>false, :constraints => { :id => /[0-9A-Za-z\-\.]+/ }
 
   get 'about' => 'welcome#about', :as => :about
   get 'contacts' => 'welcome#contacts', :as => :contacts
@@ -56,7 +56,7 @@ Alex::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'welcome#index'
+  root :to => 'posts#index'
 
   # See how all your routes lay out with "rake routes"
 

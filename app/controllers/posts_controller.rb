@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    redirect_to root_url
+    @posts = Post.order('created_at desc').all
   end
 
   # GET /posts/1
