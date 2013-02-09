@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Alex
+    %title Alex Tokarev's personal page
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -9,4 +9,7 @@
     //.navbar.navbar-fixed-top
     //  .navbar-inner
     //    .container= render 'shared/menu'
-    .container= yield
+    .container
+      .row.logo
+        =image_tag "logo.png"
+      .row= yield
