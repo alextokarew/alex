@@ -1,6 +1,14 @@
 @import "bootstrap";
 
 body { padding-top: 60px; }
+.navbar {
+  .brand {
+    max-height: 48px;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 article {
   font-size: 12pt;
   font-family: $serifFontFamily;
