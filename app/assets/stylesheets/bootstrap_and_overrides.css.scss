@@ -3,10 +3,14 @@
 body { padding-top: 60px; }
 .navbar {
   .brand {
-    max-height: 48px;
+    max-height: 40px;
     overflow: visible;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 4px 20px;
+  }
+  li {
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: bold;
   }
 }
 article {
