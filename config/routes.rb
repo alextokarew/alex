@@ -1,11 +1,12 @@
 Alex::Application.routes.draw do
+
   resources :posts
-  resources :projects
+  resources :projects do
+    get 'history', :on => :member
+  end
   resources :images, :except=>[:edit,:update], :format=>false, :constraints => { :id => /[0-9A-Za-z\-\.]+/ }
 
-  get 'about' => 'welcome#about', :as => :about
   get 'contacts' => 'welcome#contacts', :as => :contacts
-  get 'other' => 'welcome#other', :as => :other
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

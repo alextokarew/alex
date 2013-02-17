@@ -1,0 +1,7 @@
+- content_for :content do
+  %article
+    %header
+      %h1= @project.title
+      =render 'shared/project_menu', :project => @project
+    = yield
+=render :template => 'layouts/application'
