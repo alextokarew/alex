@@ -1,7 +1,6 @@
 - @projects.each do |project|
   %article
     %header
-      %h1= project.title
+      %h1= link_to project.title, project
     :textile
       #{project.summary}
-    = render 'shared/project_menu', :project=>project
