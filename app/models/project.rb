@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  attr_accessible :name, :summary
+  attr_accessible :name, :title, :summary, :description, :history
 
   def to_param
     name
