@@ -7,6 +7,7 @@ Alex::Application.routes.draw do
   resources :images, :except=>[:edit,:update], :format=>false, :constraints => { :id => /[0-9A-Za-z\-\.]+/ }
 
   get 'contacts' => 'welcome#contacts', :as => :contacts
+  get 'login' => 'welcome#login'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

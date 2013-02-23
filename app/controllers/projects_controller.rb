@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   layout "project", :only => [:show, :history]
+  before_filter :authenticate, :except=>[:index, :show, :history]
 
   # GET /projects
   # GET /projects.json
